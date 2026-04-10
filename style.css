@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#0b1f17;
+    color:#e0f2e9;
+}
+
+/* Header */
+header{
+    background:#0f3d2e;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    color:#4cffb0;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:16px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#4cffb0;
+}
+
+/* Hero Section */
+.hero{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),
+    url('https://images.pexels.com/photos/12236732/pexels-photo-12236732.jpeg');
+    background-size:cover;
+    padding:100px 40px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:50px;
+    color:#4cffb0;
+}
+
+.hero p{
+    font-size:18px;
+    margin:20px 0;
+}
+
+.btn{
+    background:#4cffb0;
+    color:black;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Section */
+.section{
+    padding:60px 40px;
+}
+
+.section h2{
+    color:#4cffb0;
+    text-align:center;
+    margin-bottom:40px;
+}
+
+/* Cards */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#133a2b;
+    padding:25px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 15px #4cffb0;
+}
+
+/* Footer */
+footer{
+    background:#0f3d2e;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* Form */
+form{
+    max-width:500px;
+    margin:auto;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    background:#133a2b;
+    border:none;
+    color:white;
+    border-radius:8px;
+}
+
+button{
+    background:#4cffb0;
+    border:none;
+    padding:12px;
+    width:100%;
+    border-radius:20px;
+    font-weight:bold;
+}
+.hidden{
+    display:none;
+    margin-top:15px;
+    font-size:14px;
+    color:#caffdd;
+}
+.pollution-details{
+    display:none;
+    margin-top:15px;
+    font-size:14px;
+    line-height:1.6;
+    color:#caffdd;
+}
+.pollution-air{
+    display: none;
+    margin-top: 10px;
+}
+.pollution-water{
+    display: none;
+    margin-top: 10px;
+}
+.pollution-plastic{
+    display: none;
+    margin-top: 10px;
+}
+

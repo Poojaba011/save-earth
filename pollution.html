@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pollution</title>
+<link rel="stylesheet" href="style.css">
+<script>
+function toggleDetails(id){
+
+    // sab details band karo
+    const all = document.querySelectorAll(".pollution-details");
+    all.forEach(function(item){
+        item.style.display = "none";
+    });
+
+    // jis par click kiya usko open karo
+    const details = document.getElementById(id);
+    details.style.display = "block";
+}
+</script>
+</head>
+<body>
+
+<header>
+  <div class="logo">Green Earth</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="trees.html">Save Trees</a>
+    <a href="pollution.html">Pollution</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<div class="hero">
+
+<div class="section">
+  <h2>Types of Pollution</h2>
+
+  <div class="cards">
+
+    <div class="card" onclick="toggleDetails('air')">
+  🌫️ Air Pollution
+  <p id="air" class="pollution-air">
+    Air pollution is the contamination of the indoor or outdoor atmosphere by harmful chemical, physical, or biological agents—such as
+    gases, smoke, and dust—that modify the natural characteristics of the atmosphere.
+  </p>
+</div>
+
+<div class="card" onclick="toggleDetails('water')">
+  💧 Water Pollution
+  <p id="water" class="pollution-water">
+    Water pollution is the contamination of water bodies (lakes, rivers, oceans, groundwater) by harmful substances 
+    like chemicals, waste, and bacteria, rendering water unsafe for use.
+  </p>
+</div>
+
+<div class="card" onclick="toggleDetails('plastic')">
+  🧴 Plastic Pollution
+  <p id="plastic" class="pollution-plastic">
+    Plastic pollution is a $1.5 trillion global health and environmental crisis, with over 8.3 billion metric tons produced since 1907, 
+    of which less than 10% has been recycled.
+    It breaks down into harmful microplastics, contaminating food and water, with annual production on track to triple by 2060.
+  </p>
+</div>
+
+  </div>
+</div>
+</div>
+
+<footer>© Green Earth</footer>
+</body>
+</html>

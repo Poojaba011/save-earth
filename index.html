@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Green Earth</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<script>
+function showText(id){
+    var para = document.getElementById(id);
+
+    if(para.style.display === "block"){
+        para.style.display = "none";
+    } else {
+        para.style.display = "block";
+    }
+}
+</script>
+
+<body>
+
+<header>
+  <div class="logo">Green Earth</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="trees.html">Save Trees</a>
+    <a href="pollution.html">Pollution</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Save Earth, Save Life</h1>
+  <p>Protect our planet for future generations</p>
+  <a href="about.html" class="btn">Learn More</a>
+
+
+<div class="section">
+  <h2>Our Mission</h2>
+
+  <div class="cards">
+
+    <div class="card" onclick="showText('trees')">
+      🌳 Protect Trees
+      <p id="trees" class="hidden">
+        Trees give us oxygen, reduce pollution, and support all life on Earth. 
+        Protecting forests is essential for a healthy planet.
+      </p>
+    </div>
+
+    <div class="card" onclick="showText('pollution')">
+      🌍 Reduce Pollution
+      <p id="pollution" class="hidden">
+        Pollution harms air, water, soil, and human health. 
+        Reducing pollution helps keep our planet clean and safe.
+      </p>
+    </div>
+
+    <div class="card" onclick="showText('green')">
+      ♻️ Go Green
+      <p id="green" class="hidden">
+        Going green means saving energy, recycling, and using eco-friendly products 
+        to protect the environment.
+      </p>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<footer>© 2026 Green Earth | Save Our Planet</footer>
+
+</body>
+</html>
